@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<title>Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@media screen and (max-width: 455px) {
+    .h3 {
+        font-size:16px;
+    }
+}
+</style>
+<body id="myPage">
+
+<!-- Navbar -->
+<div class="w3-sidebar w3-light-grey w3-card-4 w3-animate-left" style="width:200px" id="mySidebar">
+  <div class="w3-bar w3-dark-grey">
+  <span class="w3-bar-item w3-padding-16">Menu:</span>
+  <button onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding-16" title="close Sidebar">×</button>
+  </div>
+  
+  <img src="https://raw.githubusercontent.com/braddevans/nightfall/master/logo.jpg" alt="nightfall Icon" style="width:200px;height:200px;">
+
+  <div class="w3-bar-block">
+  <a class="w3-bar-item w3-button w3-purple" href="index.html">Home</a>
+  <a class="w3-bar-item w3-button" href="about.html">About</a>
+  <a class="w3-bar-item w3-button" href="https://server.pro/control-panel/6211867/console/">Console</a>
+  <div class="w3-dropdown-hover">
+    <a class="w3-button" href="javascript:void(0)">Dropdown <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a class="w3-bar-item w3-button" href="staff.html">server staff</a>
+      <a class="w3-bar-item w3-button" href="commands.html">server commands</a>
+      <a class="w3-bar-item w3-button" href="ip.html">ip</a>
+    </div>
+  </div>
+  <a class="w3-bar-item w3-button" href="support.html">Support</a>
+  </div>
+</div>
+
+<div id="main" style="margin-left:200px">
+
+<div class="w3-container w3-display-container">
+  <span title="open Sidebar" style="display:none" id="openNav" class="w3-button w3-transparent w3-display-topleft w3-xlarge" onclick="w3_open()">☰</span>
+</div>
+
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>Our Staff Team</h2>
+<p>the main team and only team:</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="logo.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Bread</h3>
+  <p>Owner</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="logo.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Vilkan</h3>
+  <p>Admin</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="logo.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>ChanAnja_</h3>
+  <p>Moderator</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="logo.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>xSubaru</h3>
+  <p>Skrub with console access</p>
+</div>
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>Info:</h2>
+<p>we are a small private vannila server.</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card-2 w3-white">
+  <img src="logo.jpg" alt="Vernazza" style="width:100%">
+  <div class="w3-container">
+  <h3>latest big builds:</h3>
+  <h4>lol</h4>
+  <p>this build is by</p>
+  <p>vilkan</p>
+  <p>lel more stuff</p>
+  <p>more stuff</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card-2 w3-white">
+  <img src="logo.jpg" alt="Cinque Terre" style="width:100%">
+  <div class="w3-container">
+  <h3>who is the owner?</p>
+  <h4>bread</h4>
+  <p>kek</p>
+  <p>bread was here</p>
+  <p>megalul</p>
+  <p>code</p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "180px";
+  document.getElementById("mySidebar").style.width = "180px";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+</body>
+</html>

@@ -38,6 +38,25 @@
     color: #fff;
     top: 5px;
 }
+#leftContent {
+  float:left;
+  width: 30%;
+  background-color: red;
+ }
+
+ #rightContent {
+   float: right;
+   width: 30%;
+   background-color: green;
+  }
+
+ #mainContent {
+    width: 30%
+    float: right
+    background-color: blue;
+    margin: 1%;
+    padding: 1%; //Not Required
+  }
 
 
 /* Extra Things */
